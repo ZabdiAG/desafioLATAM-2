@@ -1,0 +1,13 @@
+<h1>Latam#one</h1>
+<p>Find me in app/views/latam/one.html.erb</p>
+
+<h2> Formulario </h2>
+
+Hola <%= @name %>
+
+<form method='POST' action='<%= latam_save_user_path %>'> 
+  <input name='name'>
+  <input type='text' value="input@mail" name='email'>
+  <input type='submit'>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

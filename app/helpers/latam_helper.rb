@@ -1,0 +1,2 @@
+module LatamHelper
+end
